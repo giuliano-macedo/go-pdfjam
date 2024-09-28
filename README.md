@@ -1,12 +1,30 @@
 # Go pdfjam
-A [pdfjam](https://github.com/rrthomas/pdfjam) wrapper in go with a web server mode and an cli mode with save file dialog
+
+A [pdfjam](https://github.com/rrthomas/pdfjam) web interface for joining PDF format files.
 
 ## Requirements
-* go
-* pdfjam
+
+- go
+- pdfjam
 
 ## Running
-Use `go run main.go` to start the http server on port 8080 or `go run main.go [FILE_1] [FILE_2] ... [FILE_N]` to save the joined pdf with a dialog box.
+
+Use:
+
+```sh
+go run main.go
+```
+
+to start the http server on port 8080.
 
 ## Building
-`go build`
+
+```sh
+go build
+```
+
+## Running on docker
+
+```sh
+docker-compose up -d
+```
